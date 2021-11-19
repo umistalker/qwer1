@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coordinates</title>
+</head>
+<body>
+    <li>
+    {% for c in coordinate %}
+        <li>
+            <td> Элемент: {{ c.id }}</td>
+        </li>
+        </li>
+        <td> с Координатами: {{ c.coordinates }}</td> </li>
+
+    {% empty %}
+        <td>No objects yet.</td>
+
+    {% endfor %}
+</li>
+</body>
+</html>
